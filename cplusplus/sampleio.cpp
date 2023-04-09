@@ -3,23 +3,27 @@ using namespace std;
 
 void evaluate(int score)
 {
-    if (score <= 35)
+    if(score < 0 || score > 100) {
+        cout << "Invalid score provided.";
+    }
+
+    if (score < 35)
     {
         cout << "F";
     }
-    else if (score <= 40)
+    else if (score < 50)
     {
         cout << "E";
     }
-    else if (score <= 50)
+    else if (score < 60)
     {
         cout << "D";
     }
-    else if (score <= 60)
+    else if (score < 70)
     {
         cout << "C";
     }
-    else if (score <= 70)
+    else if (score < 85)
     {
         cout << "B";
     }
