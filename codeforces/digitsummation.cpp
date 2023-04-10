@@ -1,7 +1,9 @@
 #include <iostream>
 using namespace std;
 
-int digitSummation(long n1, long n2)
+typedef unsigned long long int ull_int;
+
+int digitSummation(ull_int n1, ull_int n2)
 {
 
     int r1 = n1 % 10;
@@ -13,7 +15,7 @@ int digitSummation(long n1, long n2)
 int main()
 {
 
-    long n1, n2;
+    ull_int n1, n2;
     cin >> n1 >> n2;
     cout << digitSummation(n1, n2);
 }
