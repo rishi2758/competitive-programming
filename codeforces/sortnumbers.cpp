@@ -8,7 +8,7 @@ int main()
 
     sl_int a, b, c;
     cin >> a >> b >> c;
-    int min = -std::max(-a, std::max(-b, -c));
+    int min = std::min(a, std::min(b, c));
     int max = std::max(a, std::max(b, c));
     int mid = (a + b + c) - (max + min);
     
