@@ -6,7 +6,6 @@ int main()
 {
     int x;
     cin >> x;
-    cout << sqrt(x) << "----"<< pow(x, 0.5) << endl;
     bool isPrime = true;
     for (int i = 2; i <= sqrt(x); i++)
     {
